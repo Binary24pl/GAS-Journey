@@ -26,3 +26,10 @@ code.s: Warning: end of file not at end of a line; newline inserted
 ```
 
 If u see this message on assembler stage, dont worry, seriously, this is expected, and this is only a failsafe message regarding `int $0x80`
+
+## Info
+
+My source of learning:
+https://programminggroundup.blogspot.com/2007/01/chapter-1-introduction.html
+
+each session coresponds to the chapters up from with chapter 4.
