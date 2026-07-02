@@ -17,3 +17,12 @@ In comments of each code I will leave out which tools were used(gcc, as, ld), wh
 ### However
 
 Use these just in case, as the failsafe measures between versions of GNU may differ.
+
+### Keep in mind
+
+```
+code.s: Assembler messages:
+code.s: Warning: end of file not at end of a line; newline inserted
+```
+
+If u see this message on assembler stage, dont worry, seriously, this is expected, and this is only a failsafe message regarding `int $0x80`
