@@ -25,3 +25,10 @@
 .equ STDIN, 0
 .equ STDOUT, 1
 .equ STDERR, 2
+
+#char constants
+.globl CHR_ZERO
+.globl CHR_NINE
+
+.equ CHR_ZERO, '0'
+.equ CHR_NINE, '9'
