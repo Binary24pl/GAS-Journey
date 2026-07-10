@@ -1,6 +1,6 @@
 .section .data
 prompt:
-    .ascii "Please request n pos of fibunaci"
+    .ascii "Please request n pos of fibunaci: "
     prompt_len = . - prompt
 buffer:
     .space 100
@@ -28,7 +28,10 @@ _start:
     addl $8, %esp
 
     pushl %eax
-    # function wont clear cuz it will override last pos
+    call func_fbnm
+    addl $4, %esp
+
+    movl %eax, %ebx
 
     movl $SYS_EXIT, %eax
     int $LINUX_SYSCALL
